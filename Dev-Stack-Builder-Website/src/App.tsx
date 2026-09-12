@@ -44,9 +44,22 @@ function App() {
       <Banner />
 
       <main className="mx-auto max-w-7xl px-4 py-8">
-        <div className="grid grid-cols-1 gap-6 lg:grid-cols-[1fr_280px]">
+        {/* Heading inside the box */}
+    <div className="mb-6">
+      <h1 className="text-2xl font-extrabold text-gray-900 sm:text-3xl">
+        Explore the{" "}
+        <span className="text-pink-500">
+          Technologies
+        </span>
+      </h1>
 
-          {/* Technology Cards */}
+      <p className="mt-1 text-sm text-gray-500">
+        Pick one technology per category to build your ideal stack.
+      </p>
+    </div>
+        <div className="grid grid-cols-1 gap-6 lg:grid-cols-[1fr_280px]">
+        
+          {/* Technolo  gy Cards */}
           <section>
             <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 xl:grid-cols-3">
               {technologies.map((technology) => (
