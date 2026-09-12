@@ -1,0 +1,47 @@
+import BanerImage from "../assets/banner-stack.png"
+import React from 'react';
+
+const Banner = () => {
+    return (
+    <section className="bg-white py-20">
+      <div className="mx-auto flex max-w-7xl items-center justify-between gap-10 px-6">
+
+        
+        <div className="text-black">
+          <h1 className="text-5xl font-bold">
+            Build Your{" "}<br></br>
+            <span className="bg-gradient-to-r from-orange-500 via-pink-500 to-violet-500 bg-clip-text text-transparent">
+              Developer Stack
+            </span>
+          </h1>
+
+          <p className="mt-5 max-w-2xl text-lg">
+            Explore frontend, backend, database, and tooling options,<br />
+             compare them side by side, and put together the stack that fits your <br /> next project.
+          </p>
+
+          <button className="mt-8 rounded-xl
+                  bg-gradient-to-r from-orange-500 via-pink-500 to-violet-500 px-6 py-3 font-semibold
+                 text-white hover:from-orange-400 hover:via-pink-400 hover:to-violet-400 cursor-pointer">
+                    Explore Technologies
+          </button>
+          <button className="rounded-xl border-2 text-black
+           bg-white px-6 py-3 font-semibold border-amber-100 hover-3d
+           hover:bg-blue-200 cursor-pointer">Larn More</button>
+        </div>
+
+      
+        <div>
+          <img
+            src={BanerImage}
+            alt="Developer Stack"
+            className="w-100"
+          />
+        </div>
+
+      </div>
+    </section>
+  );
+};
+
+export default Banner;

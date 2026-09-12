@@ -1,0 +1,152 @@
+[
+  {
+    "id": 1,
+    "name": "HTML",
+    "category": "Frontend",
+    "description": "The standard markup language used to create and structure web pages.",
+    "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg",
+    "rating": 4.9,
+    "difficulty": "Easy",
+    "badge": "Essential"
+  },
+  {
+    "id": 2,
+    "name": "CSS",
+    "category": "Frontend",
+    "description": "A stylesheet language used to design and style web pages.",
+    "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg",
+    "rating": 4.8,
+    "difficulty": "Easy",
+    "badge": "Essential"
+  },
+  {
+    "id": 3,
+    "name": "JavaScript",
+    "category": "Frontend",
+    "description": "A programming language used to create interactive and dynamic web applications.",
+    "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
+    "rating": 4.9,
+    "difficulty": "Medium",
+    "badge": "Popular"
+  },
+  {
+    "id": 4,
+    "name": "TypeScript",
+    "category": "Frontend",
+    "description": "A strongly typed programming language built on top of JavaScript.",
+    "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg",
+    "rating": 4.8,
+    "difficulty": "Medium",
+    "badge": "Trending"
+  },
+  {
+    "id": 5,
+    "name": "Tailwind CSS",
+    "category": "Frontend",
+    "description": "A utility-first CSS framework for quickly building modern user interfaces.",
+    "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg",
+    "rating": 4.8,
+    "difficulty": "Medium",
+    "badge": "Popular"
+  },
+  {
+    "id": 6,
+    "name": "React",
+    "category": "Frontend",
+    "description": "A JavaScript library for building reusable and interactive user interfaces.",
+    "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
+    "rating": 4.9,
+    "difficulty": "Medium",
+    "badge": "Popular"
+  },
+  {
+    "id": 7,
+    "name": "Node.js",
+    "category": "Backend",
+    "description": "A JavaScript runtime used to build fast and scalable server-side applications.",
+    "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg",
+    "rating": 4.7,
+    "difficulty": "Medium",
+    "badge": "Backend"
+  },
+  {
+    "id": 8,
+    "name": "Express.js",
+    "category": "Backend",
+    "description": "A lightweight Node.js framework used for building web servers and APIs.",
+    "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg",
+    "rating": 4.6,
+    "difficulty": "Medium",
+    "badge": "Backend"
+  },
+  {
+    "id": 9,
+    "name": "MongoDB",
+    "category": "Database",
+    "description": "A NoSQL database designed for flexible and scalable data storage.",
+    "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg",
+    "rating": 4.7,
+    "difficulty": "Medium",
+    "badge": "Database"
+  },
+  {
+    "id": 10,
+    "name": "Git",
+    "category": "Tools",
+    "description": "A distributed version control system used to track and manage code changes.",
+    "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg",
+    "rating": 4.8,
+    "difficulty": "Easy",
+    "badge": "Essential"
+  },
+  {
+    "id": 11,
+    "name": "Next.js",
+    "category": "Frontend",
+    "description": "A React framework for building fast, scalable, and production-ready web applications.",
+    "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg",
+    "rating": 4.8,
+    "difficulty": "Advanced",
+    "badge": "Framework"
+  },
+  {
+    "id": 12,
+    "name": "Vue.js",
+    "category": "Frontend",
+    "description": "A progressive JavaScript framework for building user interfaces and single-page applications.",
+    "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg",
+    "rating": 4.7,
+    "difficulty": "Medium",
+    "badge": "Framework"
+  },
+  {
+    "id": 13,
+    "name": "Angular",
+    "category": "Frontend",
+    "description": "A TypeScript-based framework for building large and scalable web applications.",
+    "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original.svg",
+    "rating": 4.6,
+    "difficulty": "Advanced",
+    "badge": "Framework"
+  },
+  {
+    "id": 14,
+    "name": "Python",
+    "category": "Programming",
+    "description": "A versatile programming language widely used for web development, automation, and data science.",
+    "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg",
+    "rating": 4.9,
+    "difficulty": "Easy",
+    "badge": "Popular"
+  },
+  {
+    "id": 15,
+    "name": "Firebase",
+    "category": "Backend",
+    "description": "A Google platform providing backend services such as authentication, database, and hosting.",
+    "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg",
+    "rating": 4.7,
+    "difficulty": "Medium",
+    "badge": "Backend"
+  }
+]
