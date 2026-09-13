@@ -1,7 +1,8 @@
 import Logo from "../assets/logo-text.png";
-import React from 'react';
+
 
 const nav = () => {
+
     return (
         <div className="flex items-center
              justify-between border-2
