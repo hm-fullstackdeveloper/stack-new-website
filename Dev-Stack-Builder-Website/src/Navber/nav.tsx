@@ -7,7 +7,7 @@ const nav = () => {
              justify-between border-2
               border-amber-100 bg-white-300">
             <img src={Logo} alt="" />
-            <ul className="flex items-center gap-6">
+            <ul className="sm:hidden md:hidden xl:flex items-center gap-6">
                 <li className="text-red-500 cursor-pointer">Home</li>
                 <li className="cursor-pointer">Technologis</li>
                 <li className="cursor-pointer">Projects</li>

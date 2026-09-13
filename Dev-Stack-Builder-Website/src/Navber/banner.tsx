@@ -10,7 +10,7 @@ const Banner = () => {
         <div className="text-black">
           <h1 className="text-5xl font-bold">
             Build Your{" "}<br></br>
-            <span className="bg-gradient-to-r from-orange-500 via-pink-500 to-violet-500 bg-clip-text text-transparent">
+            <span className="brand-gradient bg-clip-text text-transparent">
               Developer Stack
             </span>
           </h1>
@@ -20,9 +20,9 @@ const Banner = () => {
              compare them side by side, and put together the stack that fits your <br /> next project.
           </p>
 
-          <button className="mt-8 rounded-xl
-                  bg-gradient-to-r from-orange-500 via-pink-500 to-violet-500 px-6 py-3 font-semibold
-                 text-white hover:from-orange-400 hover:via-pink-400 hover:to-violet-400 cursor-pointer">
+          <button className="brand-gradient hover:brand-gradient-hover mt-8 rounded-xl
+                  px-6 py-3 font-semibold 
+                 text-white cursor-pointer">
                     Explore Technologies
           </button>
           <button className="rounded-xl border-2 text-black

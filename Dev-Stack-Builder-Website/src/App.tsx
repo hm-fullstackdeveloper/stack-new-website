@@ -4,6 +4,9 @@ import Nav from "./Navber/nav";
 import Banner from "./Navber/banner";
 import type { Technology } from "./types/technology";
 import TechnologyCard from "./components/technologyCard";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+
 
 function App() {
   const [technologies, setTechnologies] = useState<Technology[]>([]);
@@ -19,29 +22,52 @@ function App() {
 }, []);
 
   // Add technology
-  const handleAddToStack = (technology: Technology) => {
-    setStack((previousStack) => {
-      const alreadyExists = previousStack.some(
-        (item) => item.id === technology.id
-      );
-      if (alreadyExists) {
-        return previousStack;
-      }
+  // const handleAddToStack = (technology: Technology) => {
+  //   setStack((previousStack) => {
+  //     const alreadyExists = previousStack.some(
+  //       (item) => item.id === technology.id
+  //     );
+  //     if (alreadyExists) {
+  //       return previousStack;
+  //     }
 
-      return [...previousStack, technology];
-    });
-  };
+  //     return [...previousStack, technology];
+  //   });
+  // };
+const handleAddToStack = (technology: Technology) => {
+  const alreadyExists = stack.some(
+    (item) => item.id === technology.id
+  );
+
+  if (alreadyExists) {
+    toast.warning(`${technology.name} is already in your stack!`);
+    return;
+  }
+
+  setStack((previousStack) => [...previousStack, technology]);
+
+  toast.success("Added to your stack!");
+};
 
   // Remove technology
-  const handleRemoveFromStack = (id: number) => {
-    setStack((previousStack) =>
-      previousStack.filter((item) => item.id !== id)
-    );
-  };
-  // Remove all technologies
-         const handleRemoveAll = () => {
-          setStack([]);
-          };
+  // const handleRemoveFromStack = (id: number) => {
+  //   setStack((previousStack) =>
+  //     previousStack.filter((item) => item.id !== id)
+  //   );
+  // };
+const handleRemoveFromStack = (id: number) => {
+  setStack((previousStack) =>
+    previousStack.filter((item) => item.id !== id)
+  );
+
+  toast.info("Removed!");
+};        
+   const handleRemoveAll = () => {
+      setStack([]);
+  toast.info("All Technologies Removed!");
+};
+
+
           
 
 
@@ -72,9 +98,11 @@ if (loading) {
     <>
       <Nav />
       <Banner />
+      <ToastContainer></ToastContainer>
+
 
       <main className="mx-auto max-w-7xl px-4 py-8">
-        {/* Heading inside the box */}
+     
     <div className="mb-6">
       <h1 className="text-2xl font-extrabold text-gray-900 sm:text-3xl">
         Explore the{" "}
