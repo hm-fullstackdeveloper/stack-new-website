@@ -4,10 +4,11 @@ import { Menu } from "lucide-react";
 const nav = () => {
 
     return (
-        <div className="flex items-center
+        <div className="sticky top-0 z-50 
+              flex items-center
              justify-between border-2
-              border-amber-100 bg-white-300">
-                <button className="block md:hidden">
+              border-amber-50 bg-white">
+                <button className="block xl:hidden">
                 <Menu size={28} />
                 </button>
             <img src={Logo} alt="" />
@@ -19,11 +20,11 @@ const nav = () => {
                 <li className="cursor-pointer">Contact</li>
             </ul><div className="flex gap-3">
             <button className="rounded-full border-2 text-black
-           bg-white px-6 py-3 font-semibold border-amber-100 hover-3d
-           hover:bg-blue-200 cursor-pointer">Sing</button>
+           bg-white px-6 py-3 font-semibold border-gray-50 hover-3d
+           hover:bg-gray-50 cursor-pointer">Sing</button>
             <button className="rounded-full
                   bg-pink-500 px-6 py-3 font-semibold
-                 text-white hover:bg-pink-400 cursor-pointer">SingUp</button>
+                 text-white hover:bg-pink-400 cursor-pointer">Sing Up</button>
                     
             </div>
 
