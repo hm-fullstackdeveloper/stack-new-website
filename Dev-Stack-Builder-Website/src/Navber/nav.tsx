@@ -1,5 +1,5 @@
 import Logo from "../assets/logo-text.png";
-
+import { Menu } from "lucide-react";
 
 const nav = () => {
 
@@ -7,6 +7,9 @@ const nav = () => {
         <div className="flex items-center
              justify-between border-2
               border-amber-100 bg-white-300">
+                <button className="block md:hidden">
+                <Menu size={28} />
+                </button>
             <img src={Logo} alt="" />
             <ul className="sm:hidden md:hidden xl:flex items-center gap-6">
                 <li className="text-red-500 cursor-pointer">Home</li>
