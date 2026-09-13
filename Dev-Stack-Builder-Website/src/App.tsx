@@ -1,3 +1,4 @@
+import Footer from "./Footer/footers";
 import { useEffect, useState } from "react";
 import Nav from "./Navber/nav";
 import Banner from "./Navber/banner";
@@ -7,14 +8,15 @@ import TechnologyCard from "./components/technologyCard";
 function App() {
   const [technologies, setTechnologies] = useState<Technology[]>([]);
   const [stack, setStack] = useState<Technology[]>([]);
+  const [loading, setLoading] = useState(true);
 
-  // Load technologies
   useEffect(() => {
-    fetch("/data/technologies.json")
-      .then((res) => res.json())
-      .then((data) => setTechnologies(data))
-      .catch((error) => console.error(error));
-  }, []);
+  fetch("/data/technologies.json")
+    .then((res) => res.json())
+    .then((data) => setTechnologies(data))
+    .catch((error) => console.error(error))
+    .finally(() => setLoading(false));
+}, []);
 
   // Add technology
   const handleAddToStack = (technology: Technology) => {
@@ -22,7 +24,6 @@ function App() {
       const alreadyExists = previousStack.some(
         (item) => item.id === technology.id
       );
-
       if (alreadyExists) {
         return previousStack;
       }
@@ -37,6 +38,35 @@ function App() {
       previousStack.filter((item) => item.id !== id)
     );
   };
+  // Remove all technologies
+         const handleRemoveAll = () => {
+          setStack([]);
+          };
+          
+
+
+            // Loading screen
+if (loading) {
+  return (
+    <>
+      <Nav />
+
+      <div className="flex min-h-[60vh] items-center justify-center">
+        <div className="flex flex-col items-center gap-4">
+          
+          <span className="loading loading-spinner loading-lg text-violet-500"></span>
+
+          <p className="text-sm font-medium text-gray-500">
+            Loading technologies...
+          </p>
+
+        </div>
+      </div>
+    </>
+  );
+}
+
+
 
   return (
     <>
@@ -118,20 +148,33 @@ function App() {
                     </div>
 
                     <button
-                      onClick={() =>
-                        handleRemoveFromStack(technology.id)
-                      }
-                      className="rounded-lg px-2 py-1 text-xs font-semibold text-red-500 transition hover:bg-red-50"
+                    onClick={() =>
+                    handleRemoveFromStack(technology.id)
+                    }
+                     className="flex h-7 w-7 items-center justify-center rounded-full text-lg font-medium text-gray-400 transition hover:bg-red-50 hover:text-red-500"
+                    aria-label={`Remove ${technology.name}`}
                     >
-                      Remove
+                   ×
                     </button>
                   </div>
                 ))}
               </div>
             )}
+              {/* Remove All Button */}
+              {stack.length > 0 && (
+                <button
+                  onClick={handleRemoveAll}
+                  className="mt-4 w-full rounded-lg border-2 bg-white 
+                  px-4 py-2 text-sm font-semibold text-red-500
+                   hover:bg-red-300 cursor-pointer"
+                   >
+                   Remove All
+                   </button>
+                )}
           </aside>
         </div>
       </main>
+                <Footer></Footer>
     </>
   );
 }

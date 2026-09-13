@@ -14,7 +14,9 @@ const TechnologyCard = ({
   onRemove,
 }: TechnologyCardProps) => {
   return (
-    <article className="group flex h-full flex-col rounded-xl border border-gray-200 bg-white p-3 shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-lg">
+    <article className="group flex h-full flex-col rounded-xl border
+     border-gray-200 bg-white p-3 shadow-sm transition duration-300 
+     hover:-translate-y-1 hover:shadow-lg">
 
       {/* Icon + Badge */}
       <div className="flex items-center justify-between">
@@ -67,8 +69,8 @@ const TechnologyCard = ({
         }}
         className={`mt-3 w-full rounded-md px-3 py-2 text-[10px] font-semibold transition ${
           isAdded
-            ? "bg-red-500 text-white hover:bg-red-600"
-            : "bg-gray-900 text-white hover:bg-violet-600"
+            ? "bg-red-500 text-white hover:bg-red-600  cursor-pointer"
+            : "bg-gray-900 text-white hover:bg-violet-600   cursor-pointer"
         }`}
       >
         {isAdded ? "Remove from Stack" : "Add to Stack"}
