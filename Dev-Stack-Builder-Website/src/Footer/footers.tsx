@@ -49,6 +49,11 @@ const Footer = () => {
             </div>
           </div>
 
+
+
+            <div className="hidden lg:grid lg:grid-cols-3 lg:gap-100">
+
+
           {/* Product */}
           <div>
             <h3 className="text-[10px] font-bold uppercase tracking-wide text-gray-900">
@@ -69,7 +74,7 @@ const Footer = () => {
                 <a
                   href="#"
                   className="text-[10px] text-gray-400 hover:text-gray-700"
-                >
+                  >
                   Technologies
                 </a>
               </li>
@@ -84,6 +89,14 @@ const Footer = () => {
               </li>
             </ul>
           </div>
+
+
+
+
+
+
+
+
 
           {/* Company */}
           <div>
@@ -121,6 +134,11 @@ const Footer = () => {
             </ul>
           </div>
 
+
+
+
+
+
           {/* Legal */}
           <div>
             <h3 className="text-[10px] font-bold uppercase tracking-wide text-gray-900">
@@ -141,7 +159,7 @@ const Footer = () => {
                 <a
                   href="#"
                   className="text-[10px] text-gray-400 hover:text-gray-700"
-                >
+                  >
                   Terms of Service
                 </a>
               </li>
@@ -149,17 +167,22 @@ const Footer = () => {
           </div>
         </div>
 
+
+                    </div>
+
+
+
         {/* Divider */}
-        <div className="my-10 border-t border-gray-100"></div>
+        <div className="my-10 border-t border-gray-200"></div>
 
         {/* Bottom Footer */}
-        <div className="flex flex-col gap-4 text-[10px] text-gray-400 sm:flex-row sm:items-center sm:justify-between">
+        <div className="flex flex-col gap-4 text-[10px] text-gray-400 md:flex-row md:items-center md:justify-between">
 
           <p>
             © 2026 Dev Stack. All rights reserved.
           </p>
 
-          <div className="flex gap-5">
+          <div className="flex gap-5 md:flex-row md:items-center md:justify-between">
             <a href="#" className="hover:text-gray-700">
               Privacy
             </a>
