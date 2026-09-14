@@ -21,10 +21,10 @@ const nav = () => {
             </ul><div className="flex gap-3">
             <button className="rounded-full border-2 text-black
            bg-white px-6 py-3 font-semibold border-gray-50 hover-3d
-           hover:bg-gray-50 cursor-pointer">Sing</button>
+           hover:bg-gray-50 cursor-pointer">Sign In</button>
             <button className="rounded-full
                   bg-pink-500 px-6 py-3 font-semibold
-                 text-white hover:bg-pink-400 cursor-pointer">Sing Up</button>
+                 text-white hover:bg-pink-400 cursor-pointer">Sign Up</button>
                     
             </div>
 
