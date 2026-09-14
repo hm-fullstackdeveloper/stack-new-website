@@ -3,11 +3,9 @@ import BanerImage from "../assets/banner-stack.png"
 
 const Banner = () => {
     return (
-    <section className="bg-white py-20">
-      <div className="mx-auto flex max-w-7xl items-center justify-between gap-10 px-6">
-
-        
-        <div className="text-black">
+    <section className="flex min-h-screen items-center bg-white py-20">
+      <div className="mx-auto flex w-full max-w-7xl flex-col items-center justify-between gap-10 px-6 lg:flex-row">
+        <div className="text-center text-black lg:text-left">
           <h1 className="text-5xl font-bold">
             Build Your{" "}<br></br>
             <span className="brand-gradient bg-clip-text text-transparent">
