@@ -1,198 +1,189 @@
+import Fotter from "../assets/logo-text.png";
+
 const Footer = () => {
   return (
     <footer className="border-t border-gray-100 bg-white">
-      <div className="mx-auto max-w-7xl px-6 py-12">
+      <div className="mx-auto max-w-7xl px-6 py-10 sm:py-12">
 
-    
-        <div className="grid grid-cols-1 gap-10 md:grid-cols-4">
+        {/* Main Footer */}
+        <div className="flex flex-col items-center lg:grid lg:grid-cols-[1.2fr_2fr] lg:items-start lg:gap-20">
 
-          
-          <div>
-            <div className="flex items-center gap-2">
-              <span className="flex h-6 w-6 items-center justify-center rounded-md 
-              brand-gradient
-              text-[9px] font-bold text-white">
-                DS
-              </span>
+          {/* Logo & Social */}
+          <section className="flex flex-col items-center text-center lg:items-start lg:text-left">
 
-              <h2 className="text-sm font-bold text-gray-900">
-                Dev <span className="text-pink-500">Stack</span>
-              </h2>
-            </div>
+            <img
+              src={Fotter}
+              alt="Dev Stack"
+              className="h-auto w-auto"
+            />
 
-            <p className="mt-3 max-w-xs text-[10px] leading-4 text-gray-400">
+            <p className="mt-4 max-w-md text-sm leading-6 text-gray-500">
               Curated tools, technologies, and resources for developers
               building modern software.
             </p>
 
-            <div className="mt-5 flex gap-4">
+            <nav className="mt-5 flex gap-6">
               <a
                 href="#"
-                className="font-bold text-[14px] text-gray-600 hover:text-pink-500"
+                className="text-sm font-medium text-gray-600 transition hover:text-pink-500"
               >
                 GitHub
               </a>
 
               <a
                 href="#"
-                className="font-bold text-[14px] text-gray-600 hover:text-pink-500"
+                className="text-sm font-medium text-gray-600 transition hover:text-pink-500"
               >
                 Twitter
               </a>
 
               <a
                 href="#"
-                className="font-bold text-[14px] text-gray-600 hover:text-pink-500"
+                className="text-sm font-medium text-gray-600 transition hover:text-pink-500"
               >
                 LinkedIn
               </a>
-            </div>
-          </div>
+            </nav>
+          </section>
 
 
+          {/* Desktop Footer Navigation */}
+          <nav className="hidden lg:grid lg:grid-cols-3 lg:gap-24">
 
-            <div className="hidden lg:grid lg:grid-cols-3 lg:gap-100">
+            {/* Product */}
+            <section>
+              <h3 className="text-xs font-bold uppercase tracking-wide text-gray-900">
+                Product
+              </h3>
 
-
-          {/* Product */}
-          <div>
-            <h3 className="text-[10px] font-bold uppercase tracking-wide text-gray-900">
-              Product
-            </h3>
-
-            <ul className="mt-4 space-y-3">
-              <li>
-                <a
-                  href="#"
-                  className="text-[10px] text-gray-400 hover:text-gray-700"
-                >
-                  Home
-                </a>
-              </li>
-
-              <li>
-                <a
-                  href="#"
-                  className="text-[10px] text-gray-400 hover:text-gray-700"
+              <ul className="mt-4 space-y-3">
+                <li>
+                  <a
+                    href="#"
+                    className="text-xs text-gray-400 transition hover:text-gray-700"
                   >
-                  Technologies
-                </a>
-              </li>
+                    Home
+                  </a>
+                </li>
 
-              <li>
-                <a
-                  href="#"
-                  className="text-[10px] text-gray-400 hover:text-gray-700"
-                >
-                  Projects
-                </a>
-              </li>
-            </ul>
-          </div>
-
-
-
-
-
-
-
-
-
-          {/* Company */}
-          <div>
-            <h3 className="text-[10px] font-bold uppercase tracking-wide text-gray-900">
-              Company
-            </h3>
-
-            <ul className="mt-4 space-y-3">
-              <li>
-                <a
-                  href="#"
-                  className="text-[10px] text-gray-400 hover:text-gray-700"
-                >
-                  About
-                </a>
-              </li>
-
-              <li>
-                <a
-                  href="#"
-                  className="text-[10px] text-gray-400 hover:text-gray-700"
-                >
-                  Contact
-                </a>
-              </li>
-
-              <li>
-                <a
-                  href="#"
-                  className="text-[10px] text-gray-400 hover:text-gray-700"
-                >
-                  Careers
-                </a>
-              </li>
-            </ul>
-          </div>
-
-
-
-
-
-
-          {/* Legal */}
-          <div>
-            <h3 className="text-[10px] font-bold uppercase tracking-wide text-gray-900">
-              Legal
-            </h3>
-
-            <ul className="mt-4 space-y-3">
-              <li>
-                <a
-                  href="#"
-                  className="text-[10px] text-gray-400 hover:text-gray-700"
-                >
-                  Privacy Policy
-                </a>
-              </li>
-
-              <li>
-                <a
-                  href="#"
-                  className="text-[10px] text-gray-400 hover:text-gray-700"
+                <li>
+                  <a
+                    href="#"
+                    className="text-xs text-gray-400 transition hover:text-gray-700"
                   >
-                  Terms of Service
-                </a>
-              </li>
-            </ul>
-          </div>
+                    Technologies
+                  </a>
+                </li>
+
+                <li>
+                  <a
+                    href="#"
+                    className="text-xs text-gray-400 transition hover:text-gray-700"
+                  >
+                    Projects
+                  </a>
+                </li>
+              </ul>
+            </section>
+
+
+            {/* Company */}
+            <section>
+              <h3 className="text-xs font-bold uppercase tracking-wide text-gray-900">
+                Company
+              </h3>
+
+              <ul className="mt-4 space-y-3">
+                <li>
+                  <a
+                    href="#"
+                    className="text-xs text-gray-400 transition hover:text-gray-700"
+                  >
+                    About
+                  </a>
+                </li>
+
+                <li>
+                  <a
+                    href="#"
+                    className="text-xs text-gray-400 transition hover:text-gray-700"
+                  >
+                    Contact
+                  </a>
+                </li>
+
+                <li>
+                  <a
+                    href="#"
+                    className="text-xs text-gray-400 transition hover:text-gray-700"
+                  >
+                    Careers
+                  </a>
+                </li>
+              </ul>
+            </section>
+
+
+            {/* Legal */}
+            <section>
+              <h3 className="text-xs font-bold uppercase tracking-wide text-gray-900">
+                Legal
+              </h3>
+
+              <ul className="mt-4 space-y-3">
+                <li>
+                  <a
+                    href="#"
+                    className="text-xs text-gray-400 transition hover:text-gray-700"
+                  >
+                    Privacy Policy
+                  </a>
+                </li>
+
+                <li>
+                  <a
+                    href="#"
+                    className="text-xs text-gray-400 transition hover:text-gray-700"
+                  >
+                    Terms of Service
+                  </a>
+                </li>
+              </ul>
+            </section>
+
+          </nav>
         </div>
 
 
-                    </div>
-
-
-
         {/* Divider */}
-        <div className="my-10 border-t border-gray-200"></div>
+        <div className="my-8 border-t border-gray-200"></div>
+
 
         {/* Bottom Footer */}
-        <div className="flex flex-col gap-4 text-[10px] text-gray-400 md:flex-row md:items-center md:justify-between">
+        <div className="flex flex-col items-center gap-4 text-xs text-gray-400 sm:flex-row sm:justify-between">
 
           <p>
             © 2026 Dev Stack. All rights reserved.
           </p>
 
-          <div className="flex gap-5 md:flex-row md:items-center md:justify-between">
-            <a href="#" className="hover:text-gray-700">
+          <nav className="flex gap-5">
+            <a
+              href="#"
+              className="transition hover:text-gray-700"
+            >
               Privacy
             </a>
 
-            <a href="#" className="hover:text-gray-700">
+            <a
+              href="#"
+              className="transition hover:text-gray-700"
+            >
               Terms
             </a>
-          </div>
+          </nav>
 
         </div>
+
       </div>
     </footer>
   );
