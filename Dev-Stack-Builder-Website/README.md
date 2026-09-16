@@ -4,11 +4,11 @@ DevStack Builder is a modern web application for developers to explore different
 
 ## 🌐 Live Site
 
-[Live Demo](YOUR_LIVE_SITE_LINK)
+[Live Demo] : (http://unique-bombolone-1ff210.netlify.app/)
 
 ## 📂 GitHub Repository
 
-[GitHub Repository](https://github.com/hm-fullstackdeveloper/dev-stack-new-website)
+[GitHub Repository] : (https://github.com/hm-fullstackdeveloper/stack-new-website)
 
 ---
 
@@ -87,7 +87,7 @@ The website is designed to work properly on different screen sizes, including:
 To run this project locally, follow these steps:
 
 ```bash
-git clone https://github.com/hm-fullstackdeveloper/dev-stack-new-website.git
+git clone https://github.com/hm-fullstackdeveloper/stack-new-website.git
 ```
 
 Go to the project folder:
